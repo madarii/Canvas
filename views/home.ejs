@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/color-picker-master/color-picker.min.css" rel="stylesheet">
+
+    <script src="/css/color-picker-master/color-picker.min.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="/js/drawing.js"></script>
+    <script src="/js/notes.js"></script>
+
+    <style>
+        .material-icons.md-48 {
+            font-size: 66px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-row ">
+        <div class="w3-container w3-margin-left w3-cell-mobile w3-cell" style="height:100vh">
+            <div id="toolbar" class="w3-bar w3-card-4 w3-theme w3-margin-bottom" style="height:10vh; margin-top:31px">
+                <button id="circle" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/circle.png" title="circle"></button>
+                <button id="line" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/line.png" title="line"></button>
+                <button id="pencil" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/pencil.png" title="pencil"></button>
+                <button id="rectangle" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/rectangle.png" title="rectangle"></button>
+                <button id="triangle" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/triangle.png" title="triangle"></button>
+                <button id="eraser" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/eraser.png" title="eraser"></button>
+                <button id="brush" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/paint.png" title="brush"></button>
+                <button id="color" class=" color w3-button w3-bar-item" style="height:100%"><img src="/icons/palette.png" title="palette"></button>
+                <button id="fill" class="w3-button w3-bar-item" style="height:100%"><img src="/icons/paintfill.png" titile="fill"></button>
+            </div>
+            <div class="w3-white" style="position:relative; border-style:solid; border-color:LightSlateGrey">
+                <canvas style="width:100%; height:70vh; position:absolute; top:0px; left:0px" id="drawingeraser"></canvas>
+                <canvas style="width:100%; height:70vh; top:0px; left:0px" id="drawing"></canvas>
+                <canvas style="width:100%; height:70vh; position:absolute; top:0px; left:0px" id="drawingtemp"></canvas>
+            </div>
+            <div style="margin-top:15px">
+                <button class="w3-btn w3-theme w3-margin-bottom" id="clear_button">CLEAR</button>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+    "name": "cavas-sharing",
+    "version": "1.0.0",
+    "description": "collaborative paint application",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^2.5.6",
+        "express": "^4.15.2",
+        "pickr-widget": "^0.3.6",
+        "socket.io": "^1.7.3"
+    },
+    "devDependencies": {
+        "eslint": "^5.15.1"
+    }
+}
